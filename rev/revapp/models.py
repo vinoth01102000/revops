@@ -70,9 +70,9 @@ from django.contrib.auth.models import User
 class Command(BaseCommand):
     def handle(self, *args, **options):
         # The magic line
-        User.objects.create_user(username= 'rmx',
-                                email='superuser@super.com',
-                                password='rmx55',
+        User.objects.create_user(username= 'superuser',
+                                email='bhagyalakshmimerkatintellekt.com',
+                                password='password',
                                 is_staff=True,
                                 is_active=True,
                                 is_superuser=True
