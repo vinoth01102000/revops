@@ -1,8 +1,10 @@
 from django.contrib import admin
+from .models import Command
 from .models import User
 
+admin.site.unregister(User)
+admin.site.register(Command)
 admin.site.register(User)
-
 
 
 
@@ -27,7 +29,6 @@ admin.site.register(User)
 # new_group, created = Group.objects.get_or_create(name='Super admin')
 # proj_add_perm = Permission.objects.get(name='Can add project')
 # new_group.permissions.add(proj_add_perm)
-
 
 from django.contrib.auth.models import Group, Permission
 from django.contrib.contenttypes.models import ContentType
