@@ -40,10 +40,11 @@ INSTALLED_APPS = [
     'revapp',
     'rest_framework',
 
-    'dj_rest_auth.registration',
+    # 'dj_rest_auth.registration',
 
 ]
 # AUTH_USER_MODEL: str = 'revapp.User'
+# AUTH_USER_MODEL = 'rev_app.User'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
